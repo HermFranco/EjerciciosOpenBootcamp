@@ -1,0 +1,14 @@
+function sum (num1, num2, num3){
+    return num1+num2+num3;
+}
+sum(1,2,3)
+
+let coche = { 
+    puertas : 4
+}
+function sumarPuertas(suma){
+   return suma.puertas + 1;
+}
+let miCoche= sumarPuertas(coche);
+
+console.log(miCoche)
