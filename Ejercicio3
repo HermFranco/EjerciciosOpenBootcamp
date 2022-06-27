@@ -16,14 +16,30 @@ class Persona {
 
       }
 // Getter
-get info() {
-    return this.mostrarInfo();
+get edadPersona() {
+    return this.mostrarEdad();
+}
+get nombrePersona() {
+  return this.mostrarNombre();
+}
+get telefonoPersona() {
+  return this.mostrarTelefono();
 }
  // setter
- mostrarInfo () {
-   return `Tienes: ${this.edad} años, tu nombre es: ${this.nombre} y tu teléfono es: ${this.telefono}.`;
+ mostrarEdad () {
+   return `Tienes: ${this.edad} años`;
  }
+ mostrarNombre () {
+  return `Tu nombre es: ${this.nombre}`;
 }
-const yoSoy = new Persona (36, 'Herman', 5555555555 )
+mostrarTelefono () {
+  return `Tu teléfono es: ${this.telefono}.`;
+}
 
-console.log(yoSoy.info)
+//tu teléfono es: ${this.telefono}. 
+}
+const yoSoy = new Persona (36, 'Herman', 555555555 )
+
+console.log(`${yoSoy.edadPersona},
+${yoSoy.nombrePersona},
+${yoSoy.telefonoPersona}`)
